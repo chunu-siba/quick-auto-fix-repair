@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AUTO FIX REPAIRS</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">
+      <i class="fa-solid fa-wrench logo-icon"></i>
+      <span>AUTO FIX REPAIRS</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">HOME</a></li>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#services">SERVICES</a></li>
+      <li><a href="#warnings">WARNING SIGNS</a></li>
+      <li><a href="#testimonials">TESTIMONIALS</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="btn btn-primary open-modal">GET STARTED</button>
+      <div class="hamburger" id="hamburger">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="hero-content">
+      <span class="sub-heading">AUTOMOTIVE EXCELLENCE</span>
+      <h1 class="main-heading">COMPREHENSIVE VEHICLE DIAGNOSTICS & CARE</h1>
+      <p class="hero-description">
+        Delivering industry-grade mechanical precision, rapid turnarounds, and trusted engineering to keep your automobile performing at peak efficiency.
+      </p>
+      <div class="hero-buttons">
+        <button class="btn btn-primary open-modal">BOOK SERVICE NOW <i class="fa-solid fa-arrow-right"></i></button>
+        <a href="#services" class="btn btn-outline">EXPLORE WORKSHOP</a>
+      </div>
+    </div>
+    <div class="hero-image-container">
+      <img src="images/khaled-ali-k_AdZsJyTZI-unsplash.jpg"Automotive Engineering" class="hero-img">
+    </div>
+  </section>
+
+  <!-- Stats Counter Section -->
+  <section class="stats-section">
+    <div class="stats-container">
+      <div class="stat-item">
+        <h2>10<span class="blue-plus">+</span></h2>
+        <p>YEARS OF EXCELLENCE</p>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <h2>50<span class="blue-plus">K</span></h2>
+        <p>CLIENTS SERVED</p>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <h2>99<span class="blue-plus">%</span></h2>
+        <p>SATISFACTION RATING</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section" id="about">
+    <div class="section-header">
+      <span class="sub-heading">OUR PROMISE</span>
+      <h2>WE MAINTAIN YOUR MACHINE WITH UNCOMPROMISING PRECISION</h2>
+      <p>Modern equipment, certified technicians, and authentic components engineered for ultimate driver safety.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fa-solid fa-trophy"></i></div>
+        <h3>CERTIFIED MECHANICS</h3>
+        <p>Master technicians possessing extensive credentials across light vehicles, trucks, and performance cars.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fa-solid fa-car-side"></i></div>
+        <h3>DIAGNOSTIC TECHNOLOGY</h3>
+        <p>Advanced digital analysis systems capable of pinpointing complex electronic and powertrain issues instantly.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fa-solid fa-gear"></i></div>
+        <h3>ORIGINAL COMPONENTS</h3>
+        <p>We source high-grade OEM parts ensuring long-lasting performance and factory warranty integrity.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Grid Section (White Container / Black Cards) -->
+  <section class="services-section" id="services">
+    <div class="section-header">
+      <span class="sub-heading">FULL-SERVICE WORKSHOP</span>
+      <h2>SOLUTIONS FOR ALL AUTOMOTIVE NEEDS</h2>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <span class="service-num">01</span>
+        <h3>PREVENTATIVE CARE</h3>
+        <p>Comprehensive fluid flushes, oil replacements, and preventative multi-point vehicle checks.</p>
+        <button class="btn btn-outline-sm open-modal" data-service="Preventative Care">VIEW DETAILS</button>
+      </div>
+      <div class="service-card">
+        <span class="service-num">02</span>
+        <h3>WHEELS & TIRES</h3>
+        <p>High-precision balancing, tread inspection, puncture restoration, and tire fittings.</p>
+        <button class="btn btn-outline-sm open-modal" data-service="Wheels & Tires">VIEW DETAILS</button>
+      </div>
+      <div class="service-card">
+        <span class="service-num">03</span>
+        <h3>CHASSIS ALIGNMENT</h3>
+        <p>3D computer-guided laser alignment ensuring straight tracking and maximum tire lifespan.</p>
+        <button class="btn btn-outline-sm open-modal" data-service="Chassis Alignment">VIEW DETAILS</button>
+      </div>
+      <div class="service-card">
+        <span class="service-num">04</span>
+        <h3>POWDER COATING</h3>
+        <p>Industrial thermal polymer coatings for custom rims, brake calipers, and exposed subframes.</p>
+        <button class="btn btn-outline-sm open-modal" data-service="Powder Coating">VIEW DETAILS</button>
+      </div>
+      <div class="service-card">
+        <span class="service-num">05</span>
+        <h3>BRAKING SYSTEMS</h3>
+        <p>Full brake pad restoration, rotor resurfacing, hydraulic bleeding, and ABS calibration.</p>
+        <button class="btn btn-outline-sm open-modal" data-service="Braking Systems">VIEW DETAILS</button>
+      </div>
+      <div class="service-card">
+        <span class="service-num">06</span>
+        <h3>POWERTRAIN & ENGINE</h3>
+        <p>Complete timing belt replacements, cylinder head rebuilds, and electrical system diagnostics.</p>
+        <button class="btn btn-outline-sm open-modal" data-service="Powertrain & Engine">VIEW DETAILS</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Warning Signs Section (10 Accordions) -->
+  <section class="accordion-section" id="warnings">
+    <div class="section-header">
+      <span class="sub-heading">PREVENTATIVE SAFETY</span>
+      <h2>10 CRITICAL VEHICLE WARNING SIGNS</h2>
+      <p>Identify early symptoms before they develop into costly mechanical breakdowns.</p>
+    </div>
+    <div class="accordion-container">
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span><i class="fa-solid fa-triangle-exclamation warning-icon"></i> 01. Squealing or Metallic Friction During Braking</span>
+          <i class="fa-solid fa-chevron-down arrow"></i>
+        </button>
+        <div class="accordion-content">
+          <p>High-pitched squealing indicates pad wear sensors reaching critical thresholds. Harsh grinding sounds mean complete friction material exhaustion, damaging the brake discs directly.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span><i class="fa-solid fa-triangle-exclamation warning-icon"></i> 02. Dashboard Check Engine Indicator Illuminated</span>
+          <i class="fa-solid fa-chevron-down arrow"></i>
+        </button>
+        <div class="accordion-content">
+          <p>A continuous check engine light flags sensor failure, emissions anomalies, or ignition degradation. Flashing check engine lights indicate dangerous active cylinder misfires requiring immediate shutdown.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span><i class="fa-solid fa-triangle-exclamation warning-icon"></i> 03. Steering Drift or Vehicle Veering</span>
+          <i class="fa-solid fa-chevron-down arrow"></i>
+        </button>
+        <div class="accordion-content">
+          <p>If your car pulls left or right on level roads, wheel geometry is misaligned or suspension bushings are worn. Unaddressed alignment causes rapid asymmetric tire degradation.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span><i class="fa-solid fa-triangle-exclamation warning-icon"></i> 04. Fluid Pools Under Engine Bay</span>
+          <i class="fa-solid fa-chevron-down arrow"></i>
+        </button>
+        <div class="accordion-content">
+          <p>Dark brown or black puddles signal motor oil leaks, neon fluid indicates coolant leaks, reddish fluid signifies transmission hydraulic leaks, and clear odorless liquid is standard A/C condensation.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span><i class="fa-solid fa-triangle-exclamation warning-icon"></i> 05. Steering Wheel Vibration at High Speeds</span>
+          <i class="fa-solid fa-chevron-down arrow"></i>
+        </button>
+        <div class="accordion-content">
+          <p>Vibrations occurring at highway speeds usually point to un-balanced wheels, lost wheel weights, or warped brake rotors if vibrations intensify during deceleration.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span><i class="fa-solid fa-triangle-exclamation warning-icon"></i> 06. Sluggish Engine Acceleration & Hesitation</span>
+          <i class="fa-solid fa-chevron-down arrow"></i>
+        </button>
+        <div class="accordion-content">
+          <p>Delayed power pickup when stepping on the gas pedal usually points to clogged fuel injectors, dirty air filters, failing mass air flow (MAF) sensors, or worn spark plugs.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span><i class="fa-solid fa-triangle-exclamation warning-icon"></i> 07. Excessive Exhaust Smoke Output</span>
+          <i class="fa-solid fa-chevron-down arrow"></i>
+        </button>
+        <div class="accordion-content">
+          <p>Blue smoke indicates burning engine oil, thick white smoke points to coolant leaking into internal combustion chambers, and heavy black smoke signals excess fuel consumption.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span><i class="fa-solid fa-triangle-exclamation warning-icon"></i> 08. Transmission Slipping or Delayed Gear Engagement</span>
+          <i class="fa-solid fa-chevron-down arrow"></i>
+        </button>
+        <div class="accordion-content">
+          <p>If your engine revs high without expected vehicle speed increases, or shifts harshly, transmission fluid levels may be dangerously low or internal clutch plates are worn down.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span><i class="fa-solid fa-triangle-exclamation warning-icon"></i> 09. Heavy Mechanical Knocking Under Hood</span>
+          <i class="fa-solid fa-chevron-down arrow"></i>
+        </button>
+        <div class="accordion-content">
+          <p>Deep metallic knocking sounds synced with engine RPM suggest worn rod bearings or severe internal lubrication failure that requires immediate engine inspection to avoid total engine failure.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span><i class="fa-solid fa-triangle-exclamation warning-icon"></i> 10. Persistent Burning Odor While Driving</span>
+          <i class="fa-solid fa-chevron-down arrow"></i>
+        </button>
+        <div class="accordion-content">
+          <p>A sweet chemical smell indicates boiling coolant leaks, acrid burning rubber points to slipping engine belts, and sharp metallic stench suggests sticking brake calipers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="section-header">
+      <span class="sub-heading">CLIENT FEEDBACK</span>
+      <h2>WHAT DRIVERS SAY ABOUT OUR WORKSHOP</h2>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="stars">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <p>"Auto Fix Repairs diagnosed my drivetrain issues effortlessly. Fair pricing, clear communication, and impeccable turnaround."</p>
+        <h4>— David K.</h4>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <p>"Laser alignment transformed my steering stability completely. The team is dedicated, precise, and highly professional."</p>
+        <h4>— Sarah M.</h4>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <p>"Thorough inspections, completely transparent estimates, and zero hidden charges. My go-to service center."</p>
+        <h4>— Marcus V.</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section (10 Accordions) -->
+  <section class="accordion-section" id="faq">
+    <div class="section-header">
+      <span class="sub-heading">KNOWLEDGE BASE</span>
+      <h2>FREQUENTLY ASKED QUESTIONS</h2>
+    </div>
+    <div class="accordion-container">
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span>01. What service intervals should I follow for engine oil replacement?</span>
+          <i class="fa-solid fa-chevron-down arrow"></i>
+        </button>
+        <div class="accordion-content">
+          <p>Synthetic lubricants handle 7,500 to 10,000 miles between replacements. Conventional mineral oils require change intervals closer to 3,000 to 5,000 miles depending on driving conditions.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span>02. What factors cause continuous vehicle battery drainage?</span>
+          <i class="fa-solid fa-chevron-down arrow"></i>
+        </button>
+        <div class="accordion-content">
+          <p>Frequent causes involve failing alternators incapable of sustaining charge, parasitic electronic loads, harsh climate exposure, or internal chemical degradation beyond 3 to 5 years of operation.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span>03. When should vehicle braking assemblies be inspected?</span>
+          <i class="fa-solid fa-chevron-down arrow"></i>
+        </button>
+        <div class="accordion-content">
+          <p>Friction pads usually last between 25,000 and 70,000 miles. We advise comprehensive system assessments every 10,000 miles or immediately upon hearing abnormal noises.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span>04. What immediate steps are needed during engine overheating?</span>
+          <i class="fa-solid fa-chevron-down arrow"></i>
+        </button>
+        <div class="accordion-content">
+          <p>Disengage cabin air conditioning, activate heat fans to draw thermal energy away from the block, pull over safely, and allow complete cooling prior to opening reservoir caps.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span>05. How often should wheel alignment be checked on daily drivers?</span>
+          <i class="fa-solid fa-chevron-down arrow"></i>
+        </button>
+        <div class="accordion-content">
+          <p>We recommend performing laser alignment once every 12 months or every 12,000 miles, as well as immediately after replacing tires or striking major road hazards.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span>06. What is included in a routine 50-Point digital vehicle checkup?</span>
+          <i class="fa-solid fa-chevron-down arrow"></i>
+        </button>
+        <div class="accordion-content">
+          <p>Our checkup covers fluid contamination checks, battery health diagnostics, tire wear analysis, brake pad thickness measurements, steering assembly play, and computer fault code scans.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span>07. How can I tell if my vehicle's serpentine drive belt needs replacement?</span>
+          <i class="fa-solid fa-chevron-down arrow"></i>
+        </button>
+        <div class="accordion-content">
+          <p>Inspect the rubber belt for visible micro-cracks, fraying along the edges, glazing, or loud squeaking sounds coming from the front engine pulleys during cold starts.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span>08. Why is my brake pedal feeling soft or spongy when pressed?</span>
+          <i class="fa-solid fa-chevron-down arrow"></i>
+        </button>
+        <div class="accordion-content">
+          <p>A spongy pedal usually points to trapped air pockets in your brake fluid lines, moisture contamination reducing fluid boiling points, or master cylinder hydraulic seal wear.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span>09. How long does a standard transmission fluid service take?</span>
+          <i class="fa-solid fa-chevron-down arrow"></i>
+        </button>
+        <div class="accordion-content">
+          <p>A complete transmission fluid drain, pan filter replacement, and fluid level calibration generally takes between 1.5 to 2 hours in our workshop facility.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span>10. Do you provide warranty coverage on repair components and labor?</span>
+          <i class="fa-solid fa-chevron-down arrow"></i>
+        </button>
+        <div class="accordion-content">
+          <p>Yes, all OEM parts and craftsmanship installed at our center are fully backed by our 12-Month / 12,000-Mile comprehensive workshop warranty coverage.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blue-Framed Webflow Style Footer Container -->
+  <div class="footer-wrapper" id="contact">
+    <!-- Top Mini Bar -->
+    <div class="footer-top-bar">
+      <div class="logo">
+        <i class="fa-solid fa-wrench logo-icon"></i>
+        <span>AUTO FIX REPAIRS</span>
+      </div>
+      <p>Copyright © AUTO FIX REPAIRS. Created by Siba</p>
+    </div>
+
+    <!-- Main Footer Card -->
+    <footer class="footer-main-card">
+      <div class="footer-notch"></div>
+      <div class="footer-content-grid">
+        <div class="footer-col">
+          <h3>NAVIGATE</h3>
+          <div class="footer-link-columns">
+            <ul>
+              <li><a href="#home">HOME</a></li>
+              <li><a href="#about">ABOUT</a></li>
+              <li><a href="#services">SERVICES</a></li>
+              <li><a href="#warnings">WARNING SIGNS</a></li>
+            </ul>
+            <ul>
+              <li><a href="#testimonials">TESTIMONIALS</a></li>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#contact">CONTACT</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>PAGES</h3>
+          <ul>
+            <li><a href="#home">START HERE</a></li>
+            <li><a href="#about">DISCLAIMER</a></li>
+            <li><a href="#services">TERMS OF SERVICE</a></li>
+            <li><a href="#faq">PRIVACY POLICY</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>CONTACT</h3>
+          <p><a href="tel:+254796365596"><i class="fa-solid fa-phone"></i> 0796 365596</a></p>
+          <p><a href="mailto:info@autofixrepairs.com"><i class="fa-solid fa-envelope"></i> INFO@AUTOFIXREPAIRS.COM</a></p>
+          <p><a href="https://maps.google.com/?q=Huruma+Nairobi" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-location-dot"></i> HURUMA, NAIROBI</a></p>
+        </div>
+      </div>
+
+      <div class="footer-bottom-line">
+        <div class="logo">
+          <i class="fa-solid fa-wrench logo-icon"></i>
+          <span>AUTO FIX REPAIRS</span>
+        </div>
+        <p>Copyright © AUTO FIX REPAIRS. Created by Siba</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Interactive Service Appointment Modal -->
+  <div class="modal-overlay" id="appointmentModal">
+    <div class="modal-card">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <h3>SCHEDULE SERVICE APPOINTMENT</h3>
+      <p class="modal-subtitle">Auto Fix Repairs — Huruma, Nairobi</p>
+      
+      <form id="appointmentForm">
+        <div class="form-group">
+          <label for="clientName">Full Name</label>
+          <input type="text" id="clientName" required placeholder="John Doe">
+        </div>
+        <div class="form-group">
+          <label for="clientPhone">Phone Number</label>
+          <input type="tel" id="clientPhone" required value="0796 365596">
+        </div>
+        <div class="form-group">
+          <label for="serviceType">Required Service</label>
+          <select id="serviceType">
+            <option value="General Diagnostics">General Diagnostics</option>
+            <option value="Preventative Care">Preventative Care</option>
+            <option value="Wheels & Tires">Wheels & Tires</option>
+            <option value="Chassis Alignment">Chassis Alignment</option>
+            <option value="Powder Coating">Powder Coating</option>
+            <option value="Braking Systems">Braking Systems</option>
+            <option value="Powertrain & Engine">Powertrain & Engine</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">CONFIRM BOOKING</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
