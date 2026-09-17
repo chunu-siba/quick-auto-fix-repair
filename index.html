@@ -3,468 +3,699 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AUTO FIX REPAIRS</title>
+  <meta name="description" content="Quick Fix Auto Repairs — vehicle diagnostics, maintenance and repair services in Huruma, Nairobi. Request service through WhatsApp or email.">
+  <title>QUICK FIX AUTO REPAIRS | Huruma, Nairobi</title>
+
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
 
-  <!-- Navigation Bar -->
-  <nav class="navbar">
-    <div class="logo">
-      <i class="fa-solid fa-wrench logo-icon"></i>
-      <span>AUTO FIX REPAIRS</span>
-    </div>
+<body>
+  <!-- =========================================================
+       NAVIGATION
+       ========================================================= -->
+  <nav class="navbar" aria-label="Main navigation">
+    <a class="logo" href="#home" aria-label="Quick Fix Auto Repairs home">
+      <i class="fa-solid fa-wrench logo-icon" aria-hidden="true"></i>
+      <span>QUICK FIX AUTO REPAIRS</span>
+    </a>
+
     <ul class="nav-links" id="navLinks">
       <li><a href="#home">HOME</a></li>
       <li><a href="#about">ABOUT</a></li>
       <li><a href="#services">SERVICES</a></li>
       <li><a href="#warnings">WARNING SIGNS</a></li>
-      <li><a href="#testimonials">TESTIMONIALS</a></li>
       <li><a href="#faq">FAQ</a></li>
       <li><a href="#contact">CONTACT</a></li>
     </ul>
+
     <div class="nav-actions">
-      <button class="btn btn-primary open-modal">GET STARTED</button>
-      <div class="hamburger" id="hamburger">
-        <i class="fa-solid fa-bars"></i>
-      </div>
+      <a class="nav-call" href="tel:+254796365596" aria-label="Call Quick Fix Auto Repairs">
+        <i class="fa-solid fa-phone" aria-hidden="true"></i>
+        <span>0796 365596</span>
+      </a>
+      <a href="#services" class="btn btn-primary">Get Started</a>
+
+      <button class="hamburger" id="hamburger" type="button"
+              aria-label="Open navigation menu" aria-controls="navLinks" aria-expanded="false">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </button>
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section class="hero-section" id="home">
-    <div class="hero-content">
-      <span class="sub-heading">AUTOMOTIVE EXCELLENCE</span>
-      <h1 class="main-heading">COMPREHENSIVE VEHICLE DIAGNOSTICS & CARE</h1>
-      <p class="hero-description">
-        Delivering industry-grade mechanical precision, rapid turnarounds, and trusted engineering to keep your automobile performing at peak efficiency.
-      </p>
-      <div class="hero-buttons">
-        <button class="btn btn-primary open-modal">BOOK SERVICE NOW <i class="fa-solid fa-arrow-right"></i></button>
-        <a href="#services" class="btn btn-outline">EXPLORE WORKSHOP</a>
+  <main>
+    <!-- =========================================================
+         HERO
+         ========================================================= -->
+    <section class="hero-section" id="home">
+      <div class="hero-image-container">
+        <img
+          src="images/right side.jpg"
+          alt="Vehicle being serviced in an automotive workshop"
+          class="hero-img"
+        >
       </div>
-    </div>
-    <div class="hero-image-container">
-      <img src="images/khaled-ali-k_AdZsJyTZI-unsplash.jpg"Automotive Engineering" class="hero-img">
-    </div>
-  </section>
 
-  <!-- Stats Counter Section -->
-  <section class="stats-section">
-    <div class="stats-container">
-      <div class="stat-item">
-        <h2>10<span class="blue-plus">+</span></h2>
-        <p>YEARS OF EXCELLENCE</p>
-      </div>
-      <div class="stat-divider"></div>
-      <div class="stat-item">
-        <h2>50<span class="blue-plus">K</span></h2>
-        <p>CLIENTS SERVED</p>
-      </div>
-      <div class="stat-divider"></div>
-      <div class="stat-item">
-        <h2>99<span class="blue-plus">%</span></h2>
-        <p>SATISFACTION RATING</p>
-      </div>
-    </div>
-  </section>
+      <div class="hero-content">
+        <span class="sub-heading">QUICK FIX AUTO REPAIR • HURUMA, NAIROBI</span>
 
-  <!-- About Section -->
-  <section class="about-section" id="about">
-    <div class="section-header">
-      <span class="sub-heading">OUR PROMISE</span>
-      <h2>WE MAINTAIN YOUR MACHINE WITH UNCOMPROMISING PRECISION</h2>
-      <p>Modern equipment, certified technicians, and authentic components engineered for ultimate driver safety.</p>
-    </div>
-    <div class="features-grid">
-      <div class="feature-card">
-        <div class="feature-icon"><i class="fa-solid fa-trophy"></i></div>
-        <h3>CERTIFIED MECHANICS</h3>
-        <p>Master technicians possessing extensive credentials across light vehicles, trucks, and performance cars.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon"><i class="fa-solid fa-car-side"></i></div>
-        <h3>DIAGNOSTIC TECHNOLOGY</h3>
-        <p>Advanced digital analysis systems capable of pinpointing complex electronic and powertrain issues instantly.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon"><i class="fa-solid fa-gear"></i></div>
-        <h3>ORIGINAL COMPONENTS</h3>
-        <p>We source high-grade OEM parts ensuring long-lasting performance and factory warranty integrity.</p>
-      </div>
-    </div>
-  </section>
+        <h1 class="main-heading">
+          KNOW WHAT YOUR CAR NEEDS. GET IT SORTED.
+        </h1>
 
-  <!-- Services Grid Section (White Container / Black Cards) -->
-  <section class="services-section" id="services">
-    <div class="section-header">
-      <span class="sub-heading">FULL-SERVICE WORKSHOP</span>
-      <h2>SOLUTIONS FOR ALL AUTOMOTIVE NEEDS</h2>
-    </div>
-    <div class="services-grid">
-      <div class="service-card">
-        <span class="service-num">01</span>
-        <h3>PREVENTATIVE CARE</h3>
-        <p>Comprehensive fluid flushes, oil replacements, and preventative multi-point vehicle checks.</p>
-        <button class="btn btn-outline-sm open-modal" data-service="Preventative Care">VIEW DETAILS</button>
-      </div>
-      <div class="service-card">
-        <span class="service-num">02</span>
-        <h3>WHEELS & TIRES</h3>
-        <p>High-precision balancing, tread inspection, puncture restoration, and tire fittings.</p>
-        <button class="btn btn-outline-sm open-modal" data-service="Wheels & Tires">VIEW DETAILS</button>
-      </div>
-      <div class="service-card">
-        <span class="service-num">03</span>
-        <h3>CHASSIS ALIGNMENT</h3>
-        <p>3D computer-guided laser alignment ensuring straight tracking and maximum tire lifespan.</p>
-        <button class="btn btn-outline-sm open-modal" data-service="Chassis Alignment">VIEW DETAILS</button>
-      </div>
-      <div class="service-card">
-        <span class="service-num">04</span>
-        <h3>POWDER COATING</h3>
-        <p>Industrial thermal polymer coatings for custom rims, brake calipers, and exposed subframes.</p>
-        <button class="btn btn-outline-sm open-modal" data-service="Powder Coating">VIEW DETAILS</button>
-      </div>
-      <div class="service-card">
-        <span class="service-num">05</span>
-        <h3>BRAKING SYSTEMS</h3>
-        <p>Full brake pad restoration, rotor resurfacing, hydraulic bleeding, and ABS calibration.</p>
-        <button class="btn btn-outline-sm open-modal" data-service="Braking Systems">VIEW DETAILS</button>
-      </div>
-      <div class="service-card">
-        <span class="service-num">06</span>
-        <h3>POWERTRAIN & ENGINE</h3>
-        <p>Complete timing belt replacements, cylinder head rebuilds, and electrical system diagnostics.</p>
-        <button class="btn btn-outline-sm open-modal" data-service="Powertrain & Engine">VIEW DETAILS</button>
-      </div>
-    </div>
-  </section>
+        <p class="hero-description">
+          From routine maintenance to difficult vehicle problems, Quick Fix Auto Repairs
+          helps drivers understand the issue, choose the right service and get
+          their vehicle checked.
+        </p>
 
-  <!-- Warning Signs Section (10 Accordions) -->
-  <section class="accordion-section" id="warnings">
-    <div class="section-header">
-      <span class="sub-heading">PREVENTATIVE SAFETY</span>
-      <h2>10 CRITICAL VEHICLE WARNING SIGNS</h2>
-      <p>Identify early symptoms before they develop into costly mechanical breakdowns.</p>
-    </div>
-    <div class="accordion-container">
-      <div class="accordion-item">
-        <button class="accordion-header">
-          <span><i class="fa-solid fa-triangle-exclamation warning-icon"></i> 01. Squealing or Metallic Friction During Braking</span>
-          <i class="fa-solid fa-chevron-down arrow"></i>
-        </button>
-        <div class="accordion-content">
-          <p>High-pitched squealing indicates pad wear sensors reaching critical thresholds. Harsh grinding sounds mean complete friction material exhaustion, damaging the brake discs directly.</p>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <button class="accordion-header">
-          <span><i class="fa-solid fa-triangle-exclamation warning-icon"></i> 02. Dashboard Check Engine Indicator Illuminated</span>
-          <i class="fa-solid fa-chevron-down arrow"></i>
-        </button>
-        <div class="accordion-content">
-          <p>A continuous check engine light flags sensor failure, emissions anomalies, or ignition degradation. Flashing check engine lights indicate dangerous active cylinder misfires requiring immediate shutdown.</p>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <button class="accordion-header">
-          <span><i class="fa-solid fa-triangle-exclamation warning-icon"></i> 03. Steering Drift or Vehicle Veering</span>
-          <i class="fa-solid fa-chevron-down arrow"></i>
-        </button>
-        <div class="accordion-content">
-          <p>If your car pulls left or right on level roads, wheel geometry is misaligned or suspension bushings are worn. Unaddressed alignment causes rapid asymmetric tire degradation.</p>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <button class="accordion-header">
-          <span><i class="fa-solid fa-triangle-exclamation warning-icon"></i> 04. Fluid Pools Under Engine Bay</span>
-          <i class="fa-solid fa-chevron-down arrow"></i>
-        </button>
-        <div class="accordion-content">
-          <p>Dark brown or black puddles signal motor oil leaks, neon fluid indicates coolant leaks, reddish fluid signifies transmission hydraulic leaks, and clear odorless liquid is standard A/C condensation.</p>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <button class="accordion-header">
-          <span><i class="fa-solid fa-triangle-exclamation warning-icon"></i> 05. Steering Wheel Vibration at High Speeds</span>
-          <i class="fa-solid fa-chevron-down arrow"></i>
-        </button>
-        <div class="accordion-content">
-          <p>Vibrations occurring at highway speeds usually point to un-balanced wheels, lost wheel weights, or warped brake rotors if vibrations intensify during deceleration.</p>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <button class="accordion-header">
-          <span><i class="fa-solid fa-triangle-exclamation warning-icon"></i> 06. Sluggish Engine Acceleration & Hesitation</span>
-          <i class="fa-solid fa-chevron-down arrow"></i>
-        </button>
-        <div class="accordion-content">
-          <p>Delayed power pickup when stepping on the gas pedal usually points to clogged fuel injectors, dirty air filters, failing mass air flow (MAF) sensors, or worn spark plugs.</p>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <button class="accordion-header">
-          <span><i class="fa-solid fa-triangle-exclamation warning-icon"></i> 07. Excessive Exhaust Smoke Output</span>
-          <i class="fa-solid fa-chevron-down arrow"></i>
-        </button>
-        <div class="accordion-content">
-          <p>Blue smoke indicates burning engine oil, thick white smoke points to coolant leaking into internal combustion chambers, and heavy black smoke signals excess fuel consumption.</p>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <button class="accordion-header">
-          <span><i class="fa-solid fa-triangle-exclamation warning-icon"></i> 08. Transmission Slipping or Delayed Gear Engagement</span>
-          <i class="fa-solid fa-chevron-down arrow"></i>
-        </button>
-        <div class="accordion-content">
-          <p>If your engine revs high without expected vehicle speed increases, or shifts harshly, transmission fluid levels may be dangerously low or internal clutch plates are worn down.</p>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <button class="accordion-header">
-          <span><i class="fa-solid fa-triangle-exclamation warning-icon"></i> 09. Heavy Mechanical Knocking Under Hood</span>
-          <i class="fa-solid fa-chevron-down arrow"></i>
-        </button>
-        <div class="accordion-content">
-          <p>Deep metallic knocking sounds synced with engine RPM suggest worn rod bearings or severe internal lubrication failure that requires immediate engine inspection to avoid total engine failure.</p>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <button class="accordion-header">
-          <span><i class="fa-solid fa-triangle-exclamation warning-icon"></i> 10. Persistent Burning Odor While Driving</span>
-          <i class="fa-solid fa-chevron-down arrow"></i>
-        </button>
-        <div class="accordion-content">
-          <p>A sweet chemical smell indicates boiling coolant leaks, acrid burning rubber points to slipping engine belts, and sharp metallic stench suggests sticking brake calipers.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+        <div class="hero-buttons">
+          <button class="btn btn-primary btn-large open-modal" type="button">
+            REQUEST A SERVICE
+            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </button>
 
-  <!-- Testimonials Section -->
-  <section class="testimonials-section" id="testimonials">
-    <div class="section-header">
-      <span class="sub-heading">CLIENT FEEDBACK</span>
-      <h2>WHAT DRIVERS SAY ABOUT OUR WORKSHOP</h2>
-    </div>
-    <div class="testimonials-grid">
-      <div class="testimonial-card">
-        <div class="stars">
-          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          <a href="#services" class="btn btn-outline btn-large">
+            SEE SERVICES
+          </a>
         </div>
-        <p>"Auto Fix Repairs diagnosed my drivetrain issues effortlessly. Fair pricing, clear communication, and impeccable turnaround."</p>
-        <h4>— David K.</h4>
-      </div>
-      <div class="testimonial-card">
-        <div class="stars">
-          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-        </div>
-        <p>"Laser alignment transformed my steering stability completely. The team is dedicated, precise, and highly professional."</p>
-        <h4>— Sarah M.</h4>
-      </div>
-      <div class="testimonial-card">
-        <div class="stars">
-          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-        </div>
-        <p>"Thorough inspections, completely transparent estimates, and zero hidden charges. My go-to service center."</p>
-        <h4>— Marcus V.</h4>
-      </div>
-    </div>
-  </section>
 
-  <!-- FAQ Section (10 Accordions) -->
-  <section class="accordion-section" id="faq">
-    <div class="section-header">
-      <span class="sub-heading">KNOWLEDGE BASE</span>
-      <h2>FREQUENTLY ASKED QUESTIONS</h2>
-    </div>
-    <div class="accordion-container">
-      <div class="accordion-item">
-        <button class="accordion-header">
-          <span>01. What service intervals should I follow for engine oil replacement?</span>
-          <i class="fa-solid fa-chevron-down arrow"></i>
-        </button>
-        <div class="accordion-content">
-          <p>Synthetic lubricants handle 7,500 to 10,000 miles between replacements. Conventional mineral oils require change intervals closer to 3,000 to 5,000 miles depending on driving conditions.</p>
+        <div class="hero-contact-row">
+          <a href="https://wa.me/254796365596" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+            WhatsApp us
+          </a>
+          <span aria-hidden="true">•</span>
+          <a href="tel:+254796365596">
+            <i class="fa-solid fa-phone" aria-hidden="true"></i>
+            Call 0796 365596
+          </a>
         </div>
       </div>
-      <div class="accordion-item">
-        <button class="accordion-header">
-          <span>02. What factors cause continuous vehicle battery drainage?</span>
-          <i class="fa-solid fa-chevron-down arrow"></i>
-        </button>
-        <div class="accordion-content">
-          <p>Frequent causes involve failing alternators incapable of sustaining charge, parasitic electronic loads, harsh climate exposure, or internal chemical degradation beyond 3 to 5 years of operation.</p>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <button class="accordion-header">
-          <span>03. When should vehicle braking assemblies be inspected?</span>
-          <i class="fa-solid fa-chevron-down arrow"></i>
-        </button>
-        <div class="accordion-content">
-          <p>Friction pads usually last between 25,000 and 70,000 miles. We advise comprehensive system assessments every 10,000 miles or immediately upon hearing abnormal noises.</p>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <button class="accordion-header">
-          <span>04. What immediate steps are needed during engine overheating?</span>
-          <i class="fa-solid fa-chevron-down arrow"></i>
-        </button>
-        <div class="accordion-content">
-          <p>Disengage cabin air conditioning, activate heat fans to draw thermal energy away from the block, pull over safely, and allow complete cooling prior to opening reservoir caps.</p>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <button class="accordion-header">
-          <span>05. How often should wheel alignment be checked on daily drivers?</span>
-          <i class="fa-solid fa-chevron-down arrow"></i>
-        </button>
-        <div class="accordion-content">
-          <p>We recommend performing laser alignment once every 12 months or every 12,000 miles, as well as immediately after replacing tires or striking major road hazards.</p>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <button class="accordion-header">
-          <span>06. What is included in a routine 50-Point digital vehicle checkup?</span>
-          <i class="fa-solid fa-chevron-down arrow"></i>
-        </button>
-        <div class="accordion-content">
-          <p>Our checkup covers fluid contamination checks, battery health diagnostics, tire wear analysis, brake pad thickness measurements, steering assembly play, and computer fault code scans.</p>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <button class="accordion-header">
-          <span>07. How can I tell if my vehicle's serpentine drive belt needs replacement?</span>
-          <i class="fa-solid fa-chevron-down arrow"></i>
-        </button>
-        <div class="accordion-content">
-          <p>Inspect the rubber belt for visible micro-cracks, fraying along the edges, glazing, or loud squeaking sounds coming from the front engine pulleys during cold starts.</p>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <button class="accordion-header">
-          <span>08. Why is my brake pedal feeling soft or spongy when pressed?</span>
-          <i class="fa-solid fa-chevron-down arrow"></i>
-        </button>
-        <div class="accordion-content">
-          <p>A spongy pedal usually points to trapped air pockets in your brake fluid lines, moisture contamination reducing fluid boiling points, or master cylinder hydraulic seal wear.</p>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <button class="accordion-header">
-          <span>09. How long does a standard transmission fluid service take?</span>
-          <i class="fa-solid fa-chevron-down arrow"></i>
-        </button>
-        <div class="accordion-content">
-          <p>A complete transmission fluid drain, pan filter replacement, and fluid level calibration generally takes between 1.5 to 2 hours in our workshop facility.</p>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <button class="accordion-header">
-          <span>10. Do you provide warranty coverage on repair components and labor?</span>
-          <i class="fa-solid fa-chevron-down arrow"></i>
-        </button>
-        <div class="accordion-content">
-          <p>Yes, all OEM parts and craftsmanship installed at our center are fully backed by our 12-Month / 12,000-Mile comprehensive workshop warranty coverage.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Blue-Framed Webflow Style Footer Container -->
-  <div class="footer-wrapper" id="contact">
-    <!-- Top Mini Bar -->
-    <div class="footer-top-bar">
-      <div class="logo">
-        <i class="fa-solid fa-wrench logo-icon"></i>
-        <span>AUTO FIX REPAIRS</span>
+    <!-- =========================================================
+         TRUST / STATS
+         These figures are placeholders supplied in the original
+         design. Replace them with verified business figures.
+         ========================================================= -->
+    <section class="stats-section" aria-label="Business highlights">
+      <div class="stats-container">
+        <div class="stat-item">
+          <strong>5<span class="blue-plus">+</span></strong>
+          <span>YEARS EXPERIENCE*</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat-item">
+          <strong>102<span class="blue-plus">+</span></strong>
+          <span>CLIENTS SERVED*</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat-item">
+          <strong>98<span class="blue-plus">%</span></strong>
+          <span>SATISFACTION*</span>
+        </div>
       </div>
-      <p>Copyright © AUTO FIX REPAIRS. Created by Siba</p>
-    </div>
+      <p class="placeholder-note">*Placeholder figures — replace with verified business data.</p>
+    </section>
 
-    <!-- Main Footer Card -->
-    <footer class="footer-main-card">
-      <div class="footer-notch"></div>
-      <div class="footer-content-grid">
-        <div class="footer-col">
-          <h3>NAVIGATE</h3>
-          <div class="footer-link-columns">
-            <ul>
-              <li><a href="#home">HOME</a></li>
-              <li><a href="#about">ABOUT</a></li>
-              <li><a href="#services">SERVICES</a></li>
-              <li><a href="#warnings">WARNING SIGNS</a></li>
-            </ul>
-            <ul>
-              <li><a href="#testimonials">TESTIMONIALS</a></li>
-              <li><a href="#faq">FAQ</a></li>
-              <li><a href="#contact">CONTACT</a></li>
-            </ul>
+    <!-- =========================================================
+         ABOUT / WHY CONTACT US
+         ========================================================= -->
+    <section class="about-section" id="about">
+      <div class="section-header">
+        <span class="sub-heading">WHY START HERE</span>
+        <h2>LESS GUESSWORK. A CLEARER NEXT STEP.</h2>
+        <p>
+          A vehicle problem can be difficult to describe. Start with the symptom,
+          tell us what you drive, and use WhatsApp, email or a call to discuss the next step.
+        </p>
+      </div>
+
+      <div class="features-grid">
+        <article class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></div>
+          <h3>DIAGNOSE THE PROBLEM</h3>
+          <p>Share the warning light, sound, vibration or other symptom you are experiencing.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-comments" aria-hidden="true"></i></div>
+          <h3>TALK TO THE WORKSHOP</h3>
+          <p>Send your request directly through WhatsApp or email without needing an online account.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-car" aria-hidden="true"></i></div>
+          <h3>CHOOSE YOUR SERVICE</h3>
+          <p>Use the service list to identify what you may need, then let the workshop advise you.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SERVICES
+         ========================================================= -->
+    <section class="services-section" id="services">
+      <div class="section-header">
+        <span class="sub-heading">WORKSHOP SERVICES</span>
+        <h2>WHAT DO YOU NEED HELP WITH?</h2>
+        <p>Select a service to start a request. You can also choose General Diagnostics if you are unsure.</p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card">
+          <span class="service-num">01</span>
+          <h3>GENERAL DIAGNOSTICS</h3>
+          <p>For warning lights, unusual sounds, poor performance or a problem you cannot identify.</p>
+          <button class="btn btn-outline-sm open-modal" type="button" data-service="General Diagnostics">REQUEST THIS</button>
+        </article>
+
+        <article class="service-card">
+          <span class="service-num">02</span>
+          <h3>PREVENTATIVE CARE</h3>
+          <p>Routine maintenance, fluid service and vehicle checks intended to catch issues early.</p>
+          <button class="btn btn-outline-sm open-modal" type="button" data-service="Preventative Care">REQUEST THIS</button>
+        </article>
+
+        <article class="service-card">
+          <span class="service-num">03</span>
+          <h3>WHEELS &amp; TIRES</h3>
+          <p>Wheel and tire checks, balancing, puncture-related service and tire fitting.</p>
+          <button class="btn btn-outline-sm open-modal" type="button" data-service="Wheels & Tires">REQUEST THIS</button>
+        </article>
+
+        <article class="service-card">
+          <span class="service-num">04</span>
+          <h3>CHASSIS ALIGNMENT</h3>
+          <p>Alignment-related checks for steering drift, uneven tire wear and handling concerns.</p>
+          <button class="btn btn-outline-sm open-modal" type="button" data-service="Chassis Alignment">REQUEST THIS</button>
+        </article>
+
+        <article class="service-card">
+          <span class="service-num">05</span>
+          <h3>BRAKING SYSTEMS</h3>
+          <p>Brake inspection and service for squealing, grinding, vibration or a soft pedal.</p>
+          <button class="btn btn-outline-sm open-modal" type="button" data-service="Braking Systems">REQUEST THIS</button>
+        </article>
+
+        <article class="service-card">
+          <span class="service-num">06</span>
+          <h3>POWERTRAIN &amp; ENGINE</h3>
+          <p>Engine and powertrain concerns including unusual noise, overheating or poor acceleration.</p>
+          <button class="btn btn-outline-sm open-modal" type="button" data-service="Powertrain & Engine">REQUEST THIS</button>
+        </article>
+
+        <article class="service-card">
+          <span class="service-num">07</span>
+          <h3>CAR PAINTING</h3>
+          <p>Body paint and finish-related requests. Contact the workshop to discuss the vehicle and job.</p>
+          <button class="btn btn-outline-sm open-modal" type="button" data-service="Car Painting">REQUEST THIS</button>
+        </article>
+
+        <article class="service-card">
+          <span class="service-num">08</span>
+          <h3>BREAKDOWN SUPPORT</h3>
+          <p>For a vehicle that has stopped or developed a problem requiring urgent assistance.</p>
+          <button class="btn btn-outline-sm open-modal" type="button" data-service="Breakdown Support">REQUEST THIS</button>
+        </article>
+
+        <article class="service-card">
+          <span class="service-num">09</span>
+          <h3>CAR TINT</h3>
+          <p>Window tinting enquiries for drivers looking for privacy, heat reduction or UV protection.</p>
+          <button class="btn btn-outline-sm open-modal" type="button" data-service="Car Tint">REQUEST THIS</button>
+        </article>
+      </div>
+
+      <div class="section-cta">
+        <p>Not sure which service you need?</p>
+        <button class="btn btn-primary open-modal" type="button" data-service="General Diagnostics">
+          START WITH DIAGNOSTICS
+        </button>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         WARNING SIGNS
+         ========================================================= -->
+    <section class="accordion-section warning-section" id="warnings">
+      <div class="section-header">
+        <span class="sub-heading">PREVENTATIVE SAFETY</span>
+        <h2>10 WARNING SIGNS WORTH CHECKING</h2>
+        <p>These are general guidance points, not a diagnosis. If a problem feels serious or unsafe, stop driving and seek professional assistance.</p>
+      </div>
+
+      <div class="accordion-container">
+        <div class="accordion-item">
+          <button class="accordion-header" type="button" aria-expanded="false">
+            <span><i class="fa-solid fa-triangle-exclamation warning-icon" aria-hidden="true"></i> 01. Squealing or Metallic Friction During Braking</span>
+            <i class="fa-solid fa-chevron-down arrow" aria-hidden="true"></i>
+          </button>
+          <div class="accordion-content">
+            <p>High-pitched squealing can be associated with brake-pad wear, while grinding can indicate severe wear. A proper inspection is needed to identify the cause.</p>
           </div>
         </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header" type="button" aria-expanded="false">
+            <span><i class="fa-solid fa-triangle-exclamation warning-icon" aria-hidden="true"></i> 02. Dashboard Check Engine Light</span>
+            <i class="fa-solid fa-chevron-down arrow" aria-hidden="true"></i>
+          </button>
+          <div class="accordion-content">
+            <p>A check-engine light can have many causes. A flashing light can indicate a serious active fault, so professional diagnosis should not be delayed.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header" type="button" aria-expanded="false">
+            <span><i class="fa-solid fa-triangle-exclamation warning-icon" aria-hidden="true"></i> 03. Steering Drift or Vehicle Veering</span>
+            <i class="fa-solid fa-chevron-down arrow" aria-hidden="true"></i>
+          </button>
+          <div class="accordion-content">
+            <p>Pulling to one side can be related to alignment, tires, suspension or braking components. An inspection can identify the actual cause.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header" type="button" aria-expanded="false">
+            <span><i class="fa-solid fa-triangle-exclamation warning-icon" aria-hidden="true"></i> 04. Fluid Pools Under the Vehicle</span>
+            <i class="fa-solid fa-chevron-down arrow" aria-hidden="true"></i>
+          </button>
+          <div class="accordion-content">
+            <p>Fluid underneath a vehicle can come from several systems. Colour, smell and location can provide clues, but they do not replace an inspection.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header" type="button" aria-expanded="false">
+            <span><i class="fa-solid fa-triangle-exclamation warning-icon" aria-hidden="true"></i> 05. Steering Wheel Vibration</span>
+            <i class="fa-solid fa-chevron-down arrow" aria-hidden="true"></i>
+          </button>
+          <div class="accordion-content">
+            <p>Vibration can be associated with wheel balance, tires, suspension or brake components depending on when it occurs.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header" type="button" aria-expanded="false">
+            <span><i class="fa-solid fa-triangle-exclamation warning-icon" aria-hidden="true"></i> 06. Sluggish Acceleration or Hesitation</span>
+            <i class="fa-solid fa-chevron-down arrow" aria-hidden="true"></i>
+          </button>
+          <div class="accordion-content">
+            <p>Slow response can have many causes, including air, fuel, ignition or sensor-related problems. Diagnostics can narrow the possibilities.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header" type="button" aria-expanded="false">
+            <span><i class="fa-solid fa-triangle-exclamation warning-icon" aria-hidden="true"></i> 07. Excessive Exhaust Smoke</span>
+            <i class="fa-solid fa-chevron-down arrow" aria-hidden="true"></i>
+          </button>
+          <div class="accordion-content">
+            <p>Smoke colour and when it appears can provide useful clues, but an inspection is needed before deciding what component has failed.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header" type="button" aria-expanded="false">
+            <span><i class="fa-solid fa-triangle-exclamation warning-icon" aria-hidden="true"></i> 08. Transmission Slipping or Delayed Engagement</span>
+            <i class="fa-solid fa-chevron-down arrow" aria-hidden="true"></i>
+          </button>
+          <div class="accordion-content">
+            <p>Unexpected engine revving, delayed engagement or harsh shifts can indicate a transmission or related-system problem requiring diagnosis.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header" type="button" aria-expanded="false">
+            <span><i class="fa-solid fa-triangle-exclamation warning-icon" aria-hidden="true"></i> 09. Heavy Mechanical Knocking</span>
+            <i class="fa-solid fa-chevron-down arrow" aria-hidden="true"></i>
+          </button>
+          <div class="accordion-content">
+            <p>A deep mechanical knock can indicate a serious engine problem. Avoid continuing to drive if the vehicle is behaving dangerously and seek professional advice.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header" type="button" aria-expanded="false">
+            <span><i class="fa-solid fa-triangle-exclamation warning-icon" aria-hidden="true"></i> 10. Persistent Burning Odor</span>
+            <i class="fa-solid fa-chevron-down arrow" aria-hidden="true"></i>
+          </button>
+          <div class="accordion-content">
+            <p>Burning smells can come from oil, coolant, belts, brakes, wiring or other components. The source should be identified rather than guessed.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SIMPLE PROCESS
+         ========================================================= -->
+    <section class="process-section">
+      <div class="section-header">
+        <span class="sub-heading">HOW IT WORKS</span>
+        <h2>FROM PROBLEM TO CONVERSATION</h2>
+      </div>
+
+      <div class="process-grid">
+        <article class="process-step">
+          <span>01</span>
+          <i class="fa-solid fa-car-burst" aria-hidden="true"></i>
+          <h3>DESCRIBE THE PROBLEM</h3>
+          <p>Tell us what your vehicle is doing and select the service that seems closest.</p>
+        </article>
+
+        <article class="process-step">
+          <span>02</span>
+          <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+          <h3>SEND YOUR REQUEST</h3>
+          <p>Send the prepared request through WhatsApp or email — no account required.</p>
+        </article>
+
+        <article class="process-step">
+          <span>03</span>
+          <i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i>
+          <h3>DISCUSS THE NEXT STEP</h3>
+          <p>The workshop can respond and advise you about the appropriate next step.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         TESTIMONIAL PLACEHOLDERS
+         ========================================================= -->
+    <section class="testimonials-section" id="testimonials">
+      <div class="section-header">
+        <span class="sub-heading">CLIENT FEEDBACK</span>
+        <h2>WHAT DRIVERS SAY</h2>
+      </div>
+
+      <div class="testimonials-grid">
+        <article class="testimonial-card">
+          <div class="stars" aria-label="Placeholder five-star rating">
+            <i class="fa-solid fa-star" aria-hidden="true"></i>
+            <i class="fa-solid fa-star" aria-hidden="true"></i>
+            <i class="fa-solid fa-star" aria-hidden="true"></i>
+            <i class="fa-solid fa-star" aria-hidden="true"></i>
+            <i class="fa-solid fa-star" aria-hidden="true"></i>
+          </div>
+          <p>"I took my car to Auto Fix Repairs after it started making a strange noise. They explained what was wrong before doing the work and kept me updated throughout. I appreciated knowing exactly what I was paying for."</p>
+          <h4>— Brian Mwangi</h4>
+        </article>
+
+        <article class="testimonial-card">
+          <div class="stars" aria-label="Placeholder five-star rating">
+            <i class="fa-solid fa-star" aria-hidden="true"></i>
+            <i class="fa-solid fa-star" aria-hidden="true"></i>
+            <i class="fa-solid fa-star" aria-hidden="true"></i>
+            <i class="fa-solid fa-star" aria-hidden="true"></i>
+            <i class="fa-solid fa-star" aria-hidden="true"></i>
+          </div>
+          <p>“I needed my car checked quickly because I rely on it every day. The team was straightforward about what needed attention and helped me get the car back on the road without unnecessary repairs.”</p>
+          <h4>— Adan Hussein</h4>
+        </article>
+
+        <article class="testimonial-card">
+          <div class="stars" aria-label="Placeholder five-star rating">
+            <i class="fa-solid fa-star" aria-hidden="true"></i>
+            <i class="fa-solid fa-star" aria-hidden="true"></i>
+            <i class="fa-solid fa-star" aria-hidden="true"></i>
+            <i class="fa-solid fa-star" aria-hidden="true"></i>
+            <i class="fa-solid fa-star" aria-hidden="true"></i>
+          </div>
+          <p>“My car had a problem that had already been looked at elsewhere, but the issue kept coming back. Auto Fix Repairs took the time to properly diagnose it and fix the actual problem. The car has been running much better since.”</p>
+          <h4>— Grace Anyango</h4>
+        </article>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         FAQ
+         ========================================================= -->
+    <section class="accordion-section faq-section" id="faq">
+      <div class="section-header">
+        <span class="sub-heading">KNOWLEDGE BASE</span>
+        <h2>FREQUENTLY ASKED QUESTIONS</h2>
+        <p>General information only. Vehicle-specific advice should be confirmed after inspection.</p>
+      </div>
+
+      <div class="accordion-container">
+        <div class="accordion-item">
+          <button class="accordion-header" type="button" aria-expanded="false">
+            <span>01. How often should I change engine oil?</span>
+            <i class="fa-solid fa-chevron-down arrow" aria-hidden="true"></i>
+          </button>
+          <div class="accordion-content">
+            <p>Follow the vehicle manufacturer's recommended interval and consider driving conditions, oil specification and vehicle age.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header" type="button" aria-expanded="false">
+            <span>02. Why does my battery keep going flat?</span>
+            <i class="fa-solid fa-chevron-down arrow" aria-hidden="true"></i>
+          </button>
+          <div class="accordion-content">
+            <p>Possible causes include a weak battery, charging-system problems or an electrical load while the vehicle is parked. Testing is needed to identify the cause.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header" type="button" aria-expanded="false">
+            <span>03. When should I have my brakes inspected?</span>
+            <i class="fa-solid fa-chevron-down arrow" aria-hidden="true"></i>
+          </button>
+          <div class="accordion-content">
+            <p>Have the brakes inspected when you notice noise, vibration, pulling, a soft pedal or changes in braking performance, and follow the vehicle's maintenance schedule.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header" type="button" aria-expanded="false">
+            <span>04. What should I do if the engine overheats?</span>
+            <i class="fa-solid fa-chevron-down arrow" aria-hidden="true"></i>
+          </button>
+          <div class="accordion-content">
+            <p>Pull over safely, switch off the engine when appropriate and allow it to cool. Do not open a hot cooling-system cap. Seek professional assistance if the problem persists.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header" type="button" aria-expanded="false">
+            <span>05. When should wheel alignment be checked?</span>
+            <i class="fa-solid fa-chevron-down arrow" aria-hidden="true"></i>
+          </button>
+          <div class="accordion-content">
+            <p>Consider an alignment check when the vehicle pulls to one side, the steering wheel is off-centre, tires wear unevenly or after a significant impact.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header" type="button" aria-expanded="false">
+            <span>06. What information should I provide when asking for help?</span>
+            <i class="fa-solid fa-chevron-down arrow" aria-hidden="true"></i>
+          </button>
+          <div class="accordion-content">
+            <p>Include your name, phone number, vehicle make/model, the service you need, when you would prefer to come in and a short description of the problem.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header" type="button" aria-expanded="false">
+            <span>07. Can I contact you if I do not know what is wrong?</span>
+            <i class="fa-solid fa-chevron-down arrow" aria-hidden="true"></i>
+          </button>
+          <div class="accordion-content">
+            <p>Yes. Choose General Diagnostics in the request form and describe the symptoms you are noticing.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header" type="button" aria-expanded="false">
+            <span>08. Can I request a service through WhatsApp?</span>
+            <i class="fa-solid fa-chevron-down arrow" aria-hidden="true"></i>
+          </button>
+          <div class="accordion-content">
+            <p>Yes. The website can prepare your service request and open WhatsApp with the details ready to send.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================
+       CONTACT / FOOTER
+       ========================================================= -->
+  <footer class="footer-wrapper" id="contact">
+    <div class="contact-cta">
+      <div>
+        <span class="sub-heading">READY TO TALK?</span>
+        <h2>LET'S START WITH YOUR VEHICLE.</h2>
+        <p>Send the details through WhatsApp or email, or call the workshop directly.</p>
+      </div>
+
+      <div class="contact-cta-actions">
+        <a class="btn btn-primary btn-large" href="https://wa.me/254796365596" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+          WHATSAPP
+        </a>
+        <a class="btn btn-outline btn-large" href="mailto:adansiba254@gmail.com">
+          <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+          EMAIL
+        </a>
+        <a class="btn btn-outline btn-large" href="tel:+254796365596">
+          <i class="fa-solid fa-phone" aria-hidden="true"></i>
+          CALL
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-main-card">
+      <div class="footer-notch" aria-hidden="true"></div>
+
+      <div class="footer-content-grid">
+        <div class="footer-col footer-about">
+          <a class="logo" href="#home">
+            <i class="fa-solid fa-wrench logo-icon" aria-hidden="true"></i>
+            <span>QUICK FIX AUTO REPAIRS</span>
+          </a>
+          <p>Vehicle diagnostics, maintenance and repair enquiries in Huruma, Nairobi.</p>
+          <p class="footer-small">Information on this website is general and should not be treated as a diagnosis.</p>
+        </div>
+
         <div class="footer-col">
-          <h3>PAGES</h3>
+          <h3>NAVIGATE</h3>
           <ul>
-            <li><a href="#home">START HERE</a></li>
-            <li><a href="#about">DISCLAIMER</a></li>
-            <li><a href="#services">TERMS OF SERVICE</a></li>
-            <li><a href="#faq">PRIVACY POLICY</a></li>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li><a href="#warnings">WARNING SIGNS</a></li>
+            <li><a href="#faq">FAQ</a></li>
           </ul>
         </div>
+
         <div class="footer-col">
           <h3>CONTACT</h3>
-          <p><a href="tel:+254796365596"><i class="fa-solid fa-phone"></i> 0796 365596</a></p>
-          <p><a href="mailto:info@autofixrepairs.com"><i class="fa-solid fa-envelope"></i> INFO@AUTOFIXREPAIRS.COM</a></p>
-          <p><a href="https://maps.google.com/?q=Huruma+Nairobi" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-location-dot"></i> HURUMA, NAIROBI</a></p>
+          <p><a href="tel:+254796365596"><i class="fa-solid fa-phone" aria-hidden="true"></i> 0796 365596</a></p>
+          <p><a href="mailto:adansiba254@gmail.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i> adansiba254@gmail.com</a></p>
+          <p><a href="https://maps.google.com/?q=Huruma+Nairobi" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> HURUMA, NAIROBI</a></p>
+          <p><a href="https://wa.me/254796365596" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> WhatsApp</a></p>
         </div>
       </div>
 
       <div class="footer-bottom-line">
-        <div class="logo">
-          <i class="fa-solid fa-wrench logo-icon"></i>
-          <span>AUTO FIX REPAIRS</span>
-        </div>
-        <p>Copyright © AUTO FIX REPAIRS. Created by Siba</p>
+        <p>Copyright © QUICK FIX AUTO REPAIRS. Created by C.Siba.</p>
+        <a href="#home">BACK TO TOP <i class="fa-solid fa-arrow-up" aria-hidden="true"></i></a>
       </div>
-    </footer>
-  </div>
+    </div>
+  </footer>
 
-  <!-- Interactive Service Appointment Modal -->
-  <div class="modal-overlay" id="appointmentModal">
-    <div class="modal-card">
-      <button class="modal-close" id="modalClose">&times;</button>
-      <h3>SCHEDULE SERVICE APPOINTMENT</h3>
-      <p class="modal-subtitle">Auto Fix Repairs — Huruma, Nairobi</p>
-      
+  <!-- =========================================================
+       SERVICE REQUEST MODAL
+       ========================================================= -->
+  <div class="modal-overlay" id="appointmentModal" aria-hidden="true">
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" type="button" aria-label="Close service request">
+        &times;
+      </button>
+
+      <div class="modal-heading">
+        <span class="sub-heading">SERVICE REQUEST</span>
+        <h2 id="modalTitle">TELL US ABOUT YOUR VEHICLE</h2>
+        <p>We'll prepare your request so you can send it directly through WhatsApp or email.</p>
+      </div>
+
       <form id="appointmentForm">
-        <div class="form-group">
-          <label for="clientName">Full Name</label>
-          <input type="text" id="clientName" required placeholder="John Doe">
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="clientName">Full Name <span>*</span></label>
+            <input type="text" id="clientName" name="clientName" required autocomplete="name" placeholder="Your name">
+          </div>
+
+          <div class="form-group">
+            <label for="clientPhone">Phone Number <span>*</span></label>
+            <input type="tel" id="clientPhone" name="clientPhone" required autocomplete="tel" placeholder="07XX XXX XXX">
+          </div>
+
+          <div class="form-group form-group-full">
+            <label for="vehicleDetails">Vehicle Make &amp; Model <span>*</span></label>
+            <input type="text" id="vehicleDetails" name="vehicleDetails" required autocomplete="off" placeholder="e.g. Toyota Premio 2012">
+          </div>
+
+          <div class="form-group">
+            <label for="serviceType">Required Service <span>*</span></label>
+            <select id="serviceType" name="serviceType" required>
+              <option value="General Diagnostics">General Diagnostics</option>
+              <option value="Preventative Care">Preventative Care</option>
+              <option value="Wheels & Tires">Wheels & Tires</option>
+              <option value="Chassis Alignment">Chassis Alignment</option>
+              <option value="Braking Systems">Braking Systems</option>
+              <option value="Powertrain & Engine">Powertrain & Engine</option>
+              <option value="Powder Coating">Powder Coating</option>
+              <option value="Car Painting">Car Painting</option>
+              <option value="Breakdown Support">Breakdown Support</option>
+              <option value="Car Tint">Car Tint</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="preferredTime">Preferred Date / Time</label>
+            <input type="text" id="preferredTime" name="preferredTime" placeholder="e.g. Saturday morning">
+          </div>
+
+          <div class="form-group form-group-full">
+            <label for="problemDescription">What is happening with the vehicle?</label>
+            <textarea id="problemDescription" name="problemDescription" rows="4" placeholder="Tell us about the sound, warning light, vibration, leak or other issue..."></textarea>
+          </div>
         </div>
-        <div class="form-group">
-          <label for="clientPhone">Phone Number</label>
-          <input type="tel" id="clientPhone" required value="0796 365596">
+
+        <p class="form-note">
+          Your request is not stored by this website. Choose WhatsApp or email to send it to Quick Fix Quick Fix Auto Repairs.
+        </p>
+
+        <div class="modal-actions">
+          <button type="submit" class="btn btn-primary btn-block">
+            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+            CONTINUE
+          </button>
+          <a class="direct-contact" href="tel:+254796365596">
+            <i class="fa-solid fa-phone" aria-hidden="true"></i>
+            Prefer to call? 0796 365596
+          </a>
         </div>
-        <div class="form-group">
-          <label for="serviceType">Required Service</label>
-          <select id="serviceType">
-            <option value="General Diagnostics">General Diagnostics</option>
-            <option value="Preventative Care">Preventative Care</option>
-            <option value="Wheels & Tires">Wheels & Tires</option>
-            <option value="Chassis Alignment">Chassis Alignment</option>
-            <option value="Powder Coating">Powder Coating</option>
-            <option value="Braking Systems">Braking Systems</option>
-            <option value="Powertrain & Engine">Powertrain & Engine</option>
-          </select>
-        </div>
-        <button type="submit" class="btn btn-primary btn-block">CONFIRM BOOKING</button>
       </form>
+
+      <div class="send-options" id="sendOptions" hidden>
+        <div class="send-options-heading">
+          <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+          <h3>Your request is ready.</h3>
+          <p>Choose how you want to send it.</p>
+        </div>
+
+        <div class="send-options-grid">
+          <a id="whatsappLink" class="send-option whatsapp-option" href="#" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+            <span>Send via WhatsApp</span>
+            <small>Fastest option</small>
+          </a>
+
+          <a id="emailLink" class="send-option email-option" href="#">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            <span>Send via Email</span>
+            <small>Open your email app</small>
+          </a>
+        </div>
+
+        <button id="editRequest" class="btn btn-outline btn-block" type="button">
+          EDIT REQUEST
+        </button>
+      </div>
     </div>
   </div>
 
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
   <script src="script.js"></script>
 </body>
-</html>
+</html> 
